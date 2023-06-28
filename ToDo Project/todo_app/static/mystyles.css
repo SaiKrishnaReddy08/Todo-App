@@ -1,0 +1,81 @@
+body{
+    height:100vh;
+}
+
+.full-space{
+    height: 100%;
+}
+
+.list-container{
+    position: relative;    
+    padding: 5px;
+    font-size: larger;
+    overflow-y:auto;
+    flex-grow: 1;
+}
+
+.list-container li{
+    border-radius: 10px;
+}
+
+.addlist-form{
+    border:1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.content{
+    background-color: #6b6b88d2;
+    background-image: url(image.jpg);
+    background-size: cover;
+}
+
+.addlist-form>input{
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input-group-text{
+    background-color: white;
+    border-right: 0;
+}
+
+.no-border{
+    border: 0;
+}
+
+.no-border:focus{
+    box-shadow: none;
+}
+
+.nav-item:hover{
+    background-color: rgb(99, 115, 234);
+}
+
+.nav-item:hover .nav-link{
+    color:white
+}
+
+a{
+    text-decoration: none;
+}
+
+.addButton{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 25px;
+}
+
+.dlt{
+    color:red;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.nav-item>a:active{
+    background-color: rgb(28, 128, 21);
+}

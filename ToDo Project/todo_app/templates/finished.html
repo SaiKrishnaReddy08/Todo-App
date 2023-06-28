@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    {% for i in table2.query.all() %}
+        {% if i.finished %}
+            <div class="bg-success p-2 border rounded d-flex align-items-center" style="margin: 10px 70px 10px 70px">
+                <div style="flex-grow:1">
+                    <h5>{{ i.work }}</h5>
+                </div>
+                <div>
+                    <a href="{{ url_for('delete', task_id=i.id) }}"><i class="fa-solid fa-trash-can dlt"></i></a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}

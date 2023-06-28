@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    {% for i in lst.works %}
+        {% if not i.finished %}
+            <div class="p-2 border rounded d-flex align-items-center" style="margin: 10px 70px 10px 70px ;background-color: pink;">
+                <div style="flex-grow:1">
+                    <h5>{{ i.work }}</h5>
+                </div>
+                <div>
+                    <a href="{{ url_for('mark_done', task_id=i.id) }}" class="done"><button class="rounded-pill btn btn-outline-success bg-light text-success ">Done</button></a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}
